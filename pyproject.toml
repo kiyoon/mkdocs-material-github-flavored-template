@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling", "version-pioneer"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+source = "version-pioneer"
+
+[tool.hatch.build.hooks.version-pioneer]
+
+[tool.version-pioneer]
+versionscript = "src/my_project/_version.py"
+versionfile-sdist = "src/my_project/_version.py"
+versionfile-wheel = "my_project/_version.py"
+
+[tool.hatch.build.targets.sdist]
+include = ["src"]
+
+[tool.hatch.build.targets.wheel]
+sources = ["src"]
+
+[project]
+name = "my-project"
+dynamic = ["version"]
+description = "MkDocs project"
+authors = [
+  { name = "Kiyoon Kim" },
+]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11,<4"

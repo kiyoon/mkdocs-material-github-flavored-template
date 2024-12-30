@@ -1,0 +1,14 @@
+name: Check mkdocs build
+
+on: pull_request
+
+jobs:
+  mkdocs:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check mkdocs
+        uses: deargen/workflows/actions/check-mkdocs@master
+        with:
+          requirements-file: requirements.txt
