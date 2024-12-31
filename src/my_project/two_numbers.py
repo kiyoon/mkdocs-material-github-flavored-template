@@ -8,7 +8,7 @@ class TwoNumbers:
     num_1: int
     num_2: int
 
-    def add(self):
+    def add(self) -> int:
         """
         Add two numbers together.
 
@@ -20,7 +20,7 @@ class TwoNumbers:
             0
 
         Returns:
-            (int): The sum of the two numbers.
+            The sum of the two numbers.
 
         Note:
             This function only supports integers.
