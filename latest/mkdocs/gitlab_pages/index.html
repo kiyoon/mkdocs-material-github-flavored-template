@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://kiyoon.github.io/mkdocs-material-template/latest/mkdocs/gitlab_pages/">
       
       
-        <link rel="prev" href="../mkdocs/">
+        <link rel="prev" href="../../CHANGELOG/">
       
       
         <link rel="next" href="../mkdocstrings/">
@@ -22,7 +22,7 @@
     
     
       
-        <title>GitLab Pages 세팅 - MkDocs Material Template with GitHub-Flavored Markdown</title>
+        <title>Setting Up GitLab Pages - MkDocs Material Template with GitHub-Flavored Markdown</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#gitlab-pages" class="md-skip">
+        <a href="#setting-up-gitlab-pages" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -118,7 +118,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              GitLab Pages 세팅
+              Setting Up GitLab Pages
             
           </span>
         </div>
@@ -245,12 +245,12 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../mkdocs/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
     
   
-  Document Generator
+  MkDocs
 
         </a>
       </li>
@@ -448,12 +448,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
     
     
       
@@ -476,7 +470,7 @@
             
   
   <span class="md-ellipsis">
-    Document Generator
+    MkDocs
   </span>
   
 
@@ -486,30 +480,9 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Document Generator
+            MkDocs
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mkdocs/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    MkDocs
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -531,7 +504,7 @@
           
   
   <span class="md-ellipsis">
-    GitLab Pages 세팅
+    Setting Up GitLab Pages
   </span>
   
 
@@ -542,7 +515,7 @@
         
   
   <span class="md-ellipsis">
-    GitLab Pages 세팅
+    Setting Up GitLab Pages
   </span>
   
 
@@ -564,18 +537,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mkdocs-gitlab-repo" class="md-nav__link">
+  <a href="#github-repo-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      mkdocs용 GitLab repo 세팅
+      GitHub repo setup
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-repo" class="md-nav__link">
+  <a href="#github-actions" class="md-nav__link">
     <span class="md-ellipsis">
-      GitHub repo 세팅
+      GitHub Actions
     </span>
   </a>
   
@@ -601,49 +574,7 @@
         
   
   <span class="md-ellipsis">
-    파이썬 referencing
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../api_reference/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    API Reference 페이지
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../admonitions/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Admonition (Note 창)
+    Referencing Python Code
   </span>
   
 
@@ -877,18 +808,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mkdocs-gitlab-repo" class="md-nav__link">
+  <a href="#github-repo-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      mkdocs용 GitLab repo 세팅
+      GitHub repo setup
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#github-repo" class="md-nav__link">
+  <a href="#github-actions" class="md-nav__link">
     <span class="md-ellipsis">
-      GitHub repo 세팅
+      GitHub Actions
     </span>
   </a>
   
@@ -912,30 +843,15 @@
   
 
 
-<h1 id="gitlab-pages">GitLab Pages<a class="headerlink" href="#gitlab-pages" title="Permanent link">&para;</a></h1>
-<p>mkdocs로 작성된 문서는 GitLab Pages로 호스팅합니다.</p>
-<p>GitLab을 이용하는 이유는 다음과 같습니다.</p>
+<h1 id="setting-up-gitlab-pages">Setting Up GitLab Pages<a class="headerlink" href="#setting-up-gitlab-pages" title="Permanent link">&para;</a></h1>
 <ol>
-<li>GitHub Pages는 private repo로 하려면 Enterprise plan 필요</li>
-<li>GitLab Pages는 read / write 권한 및 문서 버전관리가 용이</li>
-</ol>
-<p>GitHub repo의 main branch로 push 한 경우, GitHub CI에서 GitLab으로 push합니다. 그러면 GitLab CI가 돌며 page 호스팅을 완료합니다.</p>
-<h2 id="mkdocs-gitlab-repo">mkdocs용 GitLab repo 세팅<a class="headerlink" href="#mkdocs-gitlab-repo" title="Permanent link">&para;</a></h2>
-<ol>
-<li>deargen-ai 계정으로 로그인해서 repo 만들기<ul>
-<li>Create from template -&gt; Pages/Plain HTML 선택하면 편함.</li>
-<li>🚨 deargen group에 만들면 안됨! group 프로젝트는 access token 생성이 유료 계정만 가능함.</li>
-<li>Repo 이름 예: deargen-ai/ppmi-docs</li>
+<li>Create a GitLab repo<ul>
+<li>Create from template -&gt; Pages/Plain HTML.</li>
 </ul>
 </li>
 <li>
-<p><code>Deploy -&gt; Pages</code> 들어가면 페이지 빌드 세팅하라고 나옴.</p>
-<ul>
-<li>Image는 아무이름이나 적고 넘어가서 (예: asdf)</li>
-<li>몇 번 더 그냥 넘기면</li>
-<li>마지막에 commit하기 전에 파일 수동으로 수정가능. <code>image: asdf</code> 라고 적혀있을 텐데 그 때 전부 지우고 다음 내용 넣기.  </li>
-</ul>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">busybox</span>
+<p>Set up <code>Deploy -&gt; Pages</code>
+    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nt">image</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">busybox</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">pages</span><span class="p">:</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">  </span><span class="nt">stage</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deploy</span>
@@ -947,34 +863,72 @@
 <a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">rules</span><span class="p">:</span>
 <a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">if</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH</span>
 </code></pre></div>
-출처: https://gitlab.com/pages/plain-html</p>
-<p>이제 <code>public/</code> 폴더에 웹사이트 넣으면 페이지가 호스팅 됨.<br />
-본 template은 GitHub Actions가 자동으로 GitLab으로 push하여 document webpage가 생성됨.</p>
+    Reference: https://gitlab.com/pages/plain-html</p>
+<p>Now, everything under <code>public/</code> will be deployed to GitLab Pages.</p>
 </li>
 <li>
-<p>GitLab 프로젝트에서 <code>Deploy -&gt; Pages -&gt; Use unique domain</code> 체크 해제해야 URL이 깔끔하게 나옴.</p>
+<p><code>Deploy -&gt; Pages -&gt; Use unique domain</code> untick to make the URL shorter.</p>
 </li>
-<li>프로젝트에서 <code>Settings -&gt; Access Tokens -&gt; Add new token</code> 에서 expiration 1년 뒤로 설정, <code>write repository</code> scope, Maintainer role 설정 후 토큰 생성<ul>
-<li>Maintainer가 아닐 경우, 기본 branch는 protected branch로 설정되어 push하지 못할 수 있음. 아니면 developer로 설정 후 protected branch 해지하기.</li>
-</ul>
-</li>
-<li>프로젝트에서 <code>Manage -&gt; Members -&gt; Invite a group -&gt; deargen</code>을 Guest로 추가하면 디어젠 모든 분들에게 읽기 권한이 주어짐.</li>
-<li>(Optional) 기밀 문서가 아닌 경우, <code>Settings -&gt; General -&gt; Visibility (expand) -&gt; Pages -&gt; Everyone</code> 으로 설정하면 전체 공개.</li>
+<li><code>Settings -&gt; Access Tokens -&gt; Add new token</code>, <code>write repository</code> scope, Maintainer role</li>
+<li>(Optional) If you want to make the documentation public, <code>Settings -&gt; General -&gt; Visibility (expand) -&gt; Pages -&gt; Everyone</code></li>
 </ol>
-<h2 id="github-repo">GitHub repo 세팅<a class="headerlink" href="#github-repo" title="Permanent link">&para;</a></h2>
+<h2 id="github-repo-setup">GitHub repo setup<a class="headerlink" href="#github-repo-setup" title="Permanent link">&para;</a></h2>
 <ol>
-<li>GitHub repo로 가서 <code>Setting -&gt; Secrets and variables -&gt; Actions</code> 에서 <code>New repository secret</code> 추가<ul>
+<li><code>Setting -&gt; Secrets and variables -&gt; Actions</code> -&gt; Add <code>New repository secret</code><ul>
 <li>Name: <code>GITLAB_TOKEN</code></li>
-<li>Secret: 위에서 생성한 GitLab access token</li>
+<li>Secret: GitLab access token</li>
 </ul>
 </li>
-<li><code>Setting -&gt; Secrets and variables -&gt; Actions</code> 에서 Variables 탭으로 간 뒤 <code>GITLAB_PROJECT</code>를 추가<ul>
+<li><code>Setting -&gt; Secrets and variables -&gt; Actions</code> -&gt; Variables -&gt; Add <code>GITLAB_PROJECT</code><ul>
 <li>Name: <code>GITLAB_PROJECT</code></li>
-<li>Value: GitLab docs repo 이름 (예: deargen-ai/ppmi-docs)</li>
-<li>주의: push할 repo의 이름이고 document URL이 아님.</li>
+<li>Value: Name of the GitLab docs repo (e.g. gitlab-user/my-project-docs)</li>
+<li>Warning: it's not the URL of the documentation. It's the name of the repository with the username.</li>
 </ul>
 </li>
 </ol>
+<h2 id="github-actions">GitHub Actions<a class="headerlink" href="#github-actions" title="Permanent link">&para;</a></h2>
+<p>Use the following GitHub Actions to deploy MkDocs to GitLab Pages. If you omit the gitlab-related settings, it will be published to GitHub on the <code>gh-pages</code> branch.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Manually deploy MkDocs</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="nt">workflow_dispatch</span><span class="p">:</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="nt">inputs</span><span class="p">:</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">      </span><span class="nt">version-tag</span><span class="p">:</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">        </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Version tag</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">        </span><span class="nt">default</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v0.1.0</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">  </span><span class="nt">deploy-mkdocs</span><span class="p">:</span>
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">    </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deargen/workflows/.github/workflows/deploy-mkdocs.yml@master</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">    </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">      </span><span class="nt">requirements-file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">requirements.txt</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">      </span><span class="nt">version-tag</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ github.event.inputs.version-tag }}</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">      </span><span class="nt">deploy-type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">tag</span>
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">      </span><span class="nt">gitlab-project</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ vars.GITLAB_PROJECT }}</span>
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">      </span><span class="nt">gitlab-branch</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span>
+<a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">    </span><span class="nt">secrets</span><span class="p">:</span>
+<a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">      </span><span class="nt">GITLAB_TOKEN</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITLAB_TOKEN }}</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Deploy MkDocs on latest commit</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nt">on</span><span class="p">:</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="nt">push</span><span class="p">:</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nt">branches</span><span class="p">:</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">main</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="nt">jobs</span><span class="p">:</span>
+<a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">  </span><span class="nt">deploy-mkdocs</span><span class="p">:</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">    </span><span class="nt">uses</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">deargen/workflows/.github/workflows/deploy-mkdocs.yml@master</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">    </span><span class="nt">with</span><span class="p">:</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">      </span><span class="nt">deploy-type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">latest</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">      </span><span class="nt">requirements-file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">requirements.txt</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">      </span><span class="nt">gitlab-project</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ vars.GITLAB_PROJECT }}</span>
+<a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">      </span><span class="nt">gitlab-branch</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">master</span>
+<a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">    </span><span class="nt">secrets</span><span class="p">:</span>
+<a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">      </span><span class="nt">GITLAB_TOKEN</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">${{ secrets.GITLAB_TOKEN }}</span>
+</code></pre></div>
 
 
 
@@ -1012,7 +966,7 @@
       <nav class="md-footer__inner md-grid" aria-label="하단/푸터" >
         
           
-          <a href="../mkdocs/" class="md-footer__link md-footer__link--prev" aria-label="이전: MkDocs">
+          <a href="../../CHANGELOG/" class="md-footer__link md-footer__link--prev" aria-label="이전: Changelog">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1022,20 +976,20 @@
                 이전
               </span>
               <div class="md-ellipsis">
-                MkDocs
+                Changelog
               </div>
             </div>
           </a>
         
         
           
-          <a href="../mkdocstrings/" class="md-footer__link md-footer__link--next" aria-label="다음: 파이썬 referencing">
+          <a href="../mkdocstrings/" class="md-footer__link md-footer__link--next" aria-label="다음: Referencing Python Code">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 다음
               </span>
               <div class="md-ellipsis">
-                파이썬 referencing
+                Referencing Python Code
               </div>
             </div>
             <div class="md-footer__button md-icon">
