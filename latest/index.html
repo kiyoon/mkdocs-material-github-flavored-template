@@ -885,6 +885,16 @@ This is a CAUTION type alert.</p>
 </blockquote>
 <h3 id="latex-math-equations">Latex math equations<a class="headerlink" href="#latex-math-equations" title="Permanent link">&para;</a></h3>
 <p>Using MathJax defined in <a href="docs/javascripts/mathjax.js">docs/javascripts/mathjax.js</a>.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="s">$</span><span class="nb">a^</span><span class="m">2</span><span class="nb"> </span><span class="o">+</span><span class="nb"> b^</span><span class="m">2</span><span class="nb"> </span><span class="o">=</span><span class="nb"> c^</span><span class="m">2</span><span class="s">$</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="sb">$$</span>
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="nv">\begin</span><span class="nb">{align</span><span class="o">*</span><span class="nb">}</span>
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="nv">\dot</span><span class="nb">{x} &amp; </span><span class="o">=</span><span class="nb"> </span><span class="nv">\sigma</span><span class="o">(</span><span class="nb">y</span><span class="o">-</span><span class="nb">x</span><span class="o">)</span><span class="nb"> </span><span class="nv">\\</span>
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="nv">\dot</span><span class="nb">{y} &amp; </span><span class="o">=</span><span class="nb"> </span><span class="nv">\rho</span><span class="nb"> x </span><span class="o">-</span><span class="nb"> y </span><span class="o">-</span><span class="nb"> xz </span><span class="nv">\\</span>
+<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nv">\dot</span><span class="nb">{z} &amp; </span><span class="o">=</span><span class="nb"> </span><span class="o">-</span><span class="nv">\beta</span><span class="nb"> z </span><span class="o">+</span><span class="nb"> xy</span>
+<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nv">\end</span><span class="nb">{align</span><span class="o">*</span><span class="nb">}</span>
+<a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="s">$$</span>
+</code></pre></div>
 <p><span class="arithmatex">\(a^2 + b^2 = c^2\)</span></p>
 <div class="arithmatex">\[
 \begin{align*}
@@ -894,14 +904,14 @@ This is a CAUTION type alert.</p>
 \end{align*}
 \]</div>
 <h3 id="flowchart-with-mermaid">Flowchart with mermaid<a class="headerlink" href="#flowchart-with-mermaid" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="sb">```mermaid</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="s">graph LR</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="s">  A[Start] --&gt; B{Error?};</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="s">  B --&gt;|Yes| C[Hmm...];</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="s">  C --&gt; D[Debug];</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="s">  D --&gt; B;</span>
-<a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="s">  B ----&gt;|No| E[Yay!];</span>
-<a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="sb">```</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="sb">```mermaid</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="s">graph LR</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="s">  A[Start] --&gt; B{Error?};</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="s">  B --&gt;|Yes| C[Hmm...];</span>
+<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="s">  C --&gt; D[Debug];</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="s">  D --&gt; B;</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="s">  B ----&gt;|No| E[Yay!];</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="sb">```</span>
 </code></pre></div>
 <pre class="mermaid"><code>graph LR
   A[Start] --&gt; B{Error?};
@@ -912,21 +922,21 @@ This is a CAUTION type alert.</p>
 <h3 id="automatic-api-reference-pages">Automatic API reference pages<a class="headerlink" href="#automatic-api-reference-pages" title="Permanent link">&para;</a></h3>
 <p>Using <a href="https://github.com/oprypin/mkdocs-gen-files">gen-files</a> and <a href="https://github.com/oprypin/mkdocs-literate-nav">literate-nav</a>. Basically <a href="scripts/gen_ref_nav.py">scripts/gen_ref_nav.py</a> will generate <code>reference/SUMMARY.md</code> file and then add to the navigation menu when you build it.</p>
 <p>Relevant configuration in <a href="mkdocs.yml">mkdocs.yml</a>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">nav</span><span class="p">:</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="c1"># defer to gen-files + literate-nav</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">API reference</span><span class="p">:</span>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">mkdocstrings-python</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reference/</span>
-<a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>
-<a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="nt">plugins</span><span class="p">:</span>
-<a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">gen-files</span><span class="p">:</span>
-<a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">      </span><span class="nt">scripts</span><span class="p">:</span>
-<a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scripts/gen_ref_nav.py</span>
-<a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">literate-nav</span><span class="p">:</span>
-<a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w">      </span><span class="nt">nav_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SUMMARY.md</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">nav</span><span class="p">:</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="c1"># defer to gen-files + literate-nav</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">API reference</span><span class="p">:</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">mkdocstrings-python</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reference/</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="nt">plugins</span><span class="p">:</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">gen-files</span><span class="p">:</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">      </span><span class="nt">scripts</span><span class="p">:</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">scripts/gen_ref_nav.py</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">literate-nav</span><span class="p">:</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">      </span><span class="nt">nav_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SUMMARY.md</span>
 </code></pre></div>
 <p>Notice you can add modules to ignore in <a href="scripts/gen_ref_nav.py">scripts/gen_ref_nav.py</a> by adding to <code>IGNORE_MODULES_*</code> set.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">IGNORE_MODULES_EXACT</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;my_project.my_module&quot;</span><span class="p">}</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="n">IGNORE_MODULES_STARTSWITH</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;my_project.cli.&quot;</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="n">IGNORE_MODULES_EXACT</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;my_project.my_module&quot;</span><span class="p">}</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="n">IGNORE_MODULES_STARTSWITH</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;my_project.cli.&quot;</span><span class="p">}</span>
 </code></pre></div>
 <h3 id="useful-github-actions">Useful GitHub Actions<a class="headerlink" href="#useful-github-actions" title="Permanent link">&para;</a></h3>
 <ul>
