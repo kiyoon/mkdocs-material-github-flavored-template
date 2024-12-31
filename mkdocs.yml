@@ -116,3 +116,4 @@ extra_javascript:
 
 extra_css:
   - stylesheets/extra_admonitions.css
+  - stylesheets/mkdocstrings.css
