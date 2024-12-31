@@ -83,18 +83,3 @@ jobs:
     secrets:
       GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
 ```
-
-> [!NOTE]
-> This is a NOTE type alert.
-
-> [!TIP]
-> This is a TIP type alert.
-
-> [!WARNING]
-> This is a WARNING type alert.
-
-> [!IMPORTANT]
-> This is an IMPORTANT type alert.
-
-> [!CAUTION]
-> This is a CAUTION type alert.
