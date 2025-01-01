@@ -22,7 +22,8 @@ mkdocs serve
 
 ### Github style callouts (a.k.a. admonitions or alert)
 
-Using [mkdocs-callouts](https://github.com/sondregronas/mkdocs-callouts) and additional admonitions (IMPORTANT, CAUTION) in [docs/stylesheets/extra_admonitions.css](docs/stylesheets/extra_admonitions.css).
+- [markdown-gfm-admonition](https://github.com/dahlia/markdown-gfm-admonition) simply replaces the github syntax to the pymarkdown admonitions syntax.
+- [docs/stylesheets/extra_admonitions.css](docs/stylesheets/extra_admonitions.css) defines additional admonitions (IMPORTANT, CAUTION).
 
 See how it renders in the documentation!
 
@@ -45,6 +46,15 @@ See how it renders in the documentation!
     
 <img width="503" alt="image" src="https://github.com/user-attachments/assets/0e308e57-0e50-4467-ba52-9d0407fe3e04" />
 
+Related configuration in [mkdocs.yml](mkdocs.yml):
+
+```yaml
+markdown_extensions:
+  - markdown_gfm_admonition
+
+extra_css:
+  - stylesheets/extra_admonitions.css
+```
 
 ### Latex math equations
 
